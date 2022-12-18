@@ -1,0 +1,13 @@
+const express=require("express");
+const router=express.Router();
+const {verifyAdmin}=require("../utils/verfiyToken");
+const {createHotel,deleteHotel,updateHotel,getHotel,getHotels,countByCity,countByType,getHotelRoom}=require("../controllers/hotel");
+router.post("/",verifyAdmin,createHotel);
+router.put("/:id",verifyAdmin,updateHotel);
+router.get("/",getHotels);
+router.get("/find/:id",getHotel);
+router.delete("/:id",verifyAdmin,deleteHotel);
+router.get("/countByCity",countByCity);
+router.get("/countByType",countByType);
+router.get("/room/:id",getHotelRoom);
+module.exports=router;
