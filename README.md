@@ -41,7 +41,7 @@ Make sure you have the following installed:
 
 
 2. **cd hotel-booking-backend**
-## Install dependencies:
+### Install dependencies:
 
  ```bash
 npm install
@@ -54,30 +54,30 @@ SECRET_KEY=your_secret_key
 2 **Update the values according to your requirements.**
 
 **Usage**
-# Authentication
+## Authentication
 ### To access protected endpoints, include the authentication token in the Authorization header of your requests:
 
 **Authorization: Bearer your_access_token**
 **Endpoints**
 ### User Authentication
 
-### POST /api/auth/register: Register a new user.
-### POST /api/auth/login: Log in an existing user.
-### GET /api/auth/logout: Log out the currently authenticated user.
+# POST /api/auth/register: Register a new user.
+# POST /api/auth/login: Log in an existing user.
+# GET /api/auth/logout: Log out the currently authenticated user.
 **Rooms**
-### GET /api/rooms: Get a list of available rooms.
-### GET /api/rooms/:id: Get details of a specific room.
-### POST /api/rooms: Create a new room.
-### PUT /api/rooms/:id: Update details of a specific room.
-### DELETE /api/rooms/:id: Delete a specific room.
+# GET /api/rooms: Get a list of available rooms.
+# GET /api/rooms/:id: Get details of a specific room.
+# POST /api/rooms: Create a new room.
+# PUT /api/rooms/:id: Update details of a specific room.
+# DELETE /api/rooms/:id: Delete a specific room.
 **Bookings**
 
-### GET /api/bookings: Get a list of all bookings.
-### GET /api/bookings/:id: Get details of a specific booking.
-### POST /api/bookings: Create a new booking.
-### PUT /api/bookings/:id: Update details of a specific booking.
-### DELETE /api/bookings/:id: Delete a specific booking.
-### Contributing
+# GET /api/bookings: Get a list of all bookings.
+# GET /api/bookings/:id: Get details of a specific booking.
+# POST /api/bookings: Create a new booking.
+# PUT /api/bookings/:id: Update details of a specific booking.
+# DELETE /api/bookings/:id: Delete a specific booking.
+# Contributing
 **We welcome contributions! Please follow the contribution guidelines when submitting pull requests or opening issues.**
 
 ## License
